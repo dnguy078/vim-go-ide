@@ -33,7 +33,8 @@ autocmd VimEnter * if !argc() | NERDTree | endif
 map <leader>T :NERDTreeFind<cr>
 
 " Toogle on/off
-nmap <leader>o :NERDTreeToggle<cr>
+nmap <leader>t :NERDTreeToggle<cr>
+nmap <leader>g :NERDTree<cr>
 
 
 "------------------------------------------------------------------------------
@@ -161,11 +162,11 @@ au FileType go nmap <leader>c <Plug>(go-coverage)
 " By default syntax-highlighting for Functions, Methods and Structs is disabled.
 " Let's enable them!
 let g:go_highlight_functions = 1
-let g:go_highlight_methods = 1
-let g:go_highlight_structs = 1
+let g:go_highlight_methods = 0
+let g:go_highlight_structs = 0
 
 nmap <F8> :TagbarToggle<CR>
-let g:tagbar_type_go = {  
+let g:tagbar_type_go = {
     \ 'ctagstype' : 'go',
     \ 'kinds'     : [
         \ 'p:package',

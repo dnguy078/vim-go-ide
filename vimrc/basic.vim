@@ -6,11 +6,13 @@
 set nocp
 
 " Sets how many lines of history VIM has to remember
-set history=700
+set history=100
+set mouse=a
 
 " Enable filetype plugins
 filetype plugin on
 filetype indent on
+set ttyfast
 
 " With a map leader it's possible to do extra key combinations
 " like <leader>w saves the current file
@@ -43,6 +45,7 @@ set colorcolumn=80,120
 " Avoid garbled characters in Chinese language windows OS
 let $LANG='en'
 set langmenu=en
+let g:go_gocode_unimported_packages = 1
 source $VIMRUNTIME/delmenu.vim
 source $VIMRUNTIME/menu.vim
 
