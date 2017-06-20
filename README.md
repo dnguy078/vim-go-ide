@@ -44,3 +44,7 @@ Yep, that's it!
 - You can also define your custom settings in `~/.vim_go_runtime/custom_config.vim` the runtime will try to load this file - so feel free to remap keys as you see necessary!
 
 **If you know some plugin that will enhance this setup and thus should be included - submit a PR**
+
+### 6. Speed up
+- Used Karabiner key repeat for mac osx for scrolling speed up
+- Turned off function and methods highlighting
